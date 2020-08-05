@@ -13,7 +13,7 @@ public class SignUpPage {
 	
 	By creatButton = By.cssSelector(".u-hide-ios > .css-13wy194 > .css-1v4j5c2 > .tw-inline-flex > span");
 	By email = By.id("email");
-	By continueButton = By.name(".css-n2o8q8");
+	By continueButton = By.cssSelector(".css-1x5xc8x > .css-3gbbd7 > .css-hga51k > .css-1fh9ug8 > .css-n2o8q8");
 	By username = By.id("display_name");
 	By password = By.id("password");
 	
@@ -24,5 +24,11 @@ public class SignUpPage {
 	public void clickSignUp()
 	{
 		driver.findElement(creatButton).click();
+	}
+	
+	public void typeEmailAddress()
+	{
+		driver.findElement(email).sendKeys("qatester.movva@gmail.com");
+		driver.findElement(continueButton).click();
 	}
 }

@@ -23,7 +23,9 @@ public class VerifyKomootSignUp {
 		SignUpPage signup = new SignUpPage(driver);
 		Thread.sleep(1000);
 		signup.clickSignUp();
-		driver.quit();
+		Thread.sleep(1000);
+		signup.typeEmailAddress();
+		//driver.quit();
 	}
 
 }
