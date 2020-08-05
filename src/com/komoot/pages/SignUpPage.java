@@ -16,6 +16,7 @@ public class SignUpPage {
 	By continueButton = By.cssSelector(".css-1x5xc8x > .css-3gbbd7 > .css-hga51k > .css-1fh9ug8 > .css-n2o8q8");
 	By username = By.id("display_name");
 	By password = By.id("password");
+	By Accountbutton = By.cssSelector(".css-i0aiv2 > .css-10klw3m > .css-hga51k > .css-1fh9ug8 > .css-n2o8q8");
 	
 	public SignUpPage(WebDriver driver) {
 		this.driver = driver;
@@ -31,4 +32,13 @@ public class SignUpPage {
 		driver.findElement(email).sendKeys("qatester.movva@gmail.com");
 		driver.findElement(continueButton).click();
 	}
+	
+	public void credentials()
+	{
+		driver.findElement(username).sendKeys("Vijaya");
+		driver.findElement(password).sendKeys("SevenS_1234");
+		driver.findElement(Accountbutton).click();
+		
+	}
+	
 }
