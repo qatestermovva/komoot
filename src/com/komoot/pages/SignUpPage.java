@@ -27,9 +27,9 @@ public class SignUpPage {
 		driver.findElement(creatButton).click();
 	}
 	
-	public void typeEmailAddress()
+	public void typeEmailAddress(String uid)
 	{
-		driver.findElement(email).sendKeys("qatester.movva@gmail.com");
+		driver.findElement(email).sendKeys(uid);
 		driver.findElement(continueButton).click();
 	}
 	

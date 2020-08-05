@@ -22,5 +22,9 @@ public class VerifykomootSignIn {
 		signin.typeEmailAddress();
 		Thread.sleep(1000);
 		signin.typePwd();
+		Thread.sleep(1000);
+		signin.search();
+		Thread.sleep(10000);
+		signin.pickRecommendation();
 	}
 }

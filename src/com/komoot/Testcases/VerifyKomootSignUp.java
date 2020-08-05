@@ -5,6 +5,8 @@ package com.komoot.Testcases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+
+import com.komoot.pages.SignIn;
 import com.komoot.pages.SignUpPage;
 
 /**
@@ -24,10 +26,10 @@ public class VerifyKomootSignUp {
 		Thread.sleep(1000);
 		signup.clickSignUp();
 		Thread.sleep(1000);
-		signup.typeEmailAddress();
+		signup.typeEmailAddress("qatesting@gmail.com");
 		Thread.sleep(1000);
 		signup.credentials();
-		//driver.quit();
+		driver.quit();
 	}
 
 }

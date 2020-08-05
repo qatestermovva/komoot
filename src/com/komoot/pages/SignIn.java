@@ -14,6 +14,9 @@ WebDriver driver;
 	By username = By.id("display_name");
 	By password = By.id("password");
 	By Accountbutton = By.cssSelector(".css-i0aiv2 > .css-10klw3m > .css-hga51k > .css-1fh9ug8 > .css-n2o8q8");
+	By SearchBox =By.xpath(".//input[@placeholder='Where to?']");
+	By searchButton = By.xpath(".//span[contains(text(),'Search')]");
+	By pickDestination = By.xpath(".//h3[contains(text(),'Mauerweg am Wasser Loop from Karl-Bon')]");
 	
 	public SignIn(WebDriver driver) {
 		this.driver = driver;
@@ -34,6 +37,20 @@ WebDriver driver;
 	{
 		driver.findElement(password).sendKeys("cistdk02");
 		driver.findElement(Accountbutton).click();
+	}
+	
+	public void search() throws InterruptedException
+	{
+		driver.findElement(SearchBox).clear();
+		Thread.sleep(1000);
+		driver.findElement(SearchBox).sendKeys("Potsdam");
+		Thread.sleep(1000);
+		driver.findElement(searchButton).click();
+	}
+	
+	public void pickRecommendation()
+	{
+		driver.findElement(pickDestination).click();
 	}
 
 }
