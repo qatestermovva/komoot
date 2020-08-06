@@ -1,4 +1,4 @@
-# komoot
+# Test cases for Komoot
 
 #Software Details:
 Operating System: Windows 10 Pro
@@ -14,7 +14,7 @@ PC: Dell Insperion 15, 3000 Series
 3. Download Testng-7.3.0.jar
 4. Install Testng plugin with Maven for Eclipse IDE
 
-How to run the tests:
+# How to run the tests:
 1. Download and install Eclipse IDE 
 2. Download and unzip Selenium-java, ChromeDriver and Testng and keep them in a folder
 3. Open Eclipse IDE and install the Testng plugin by going to Help->Install New Software
@@ -22,5 +22,5 @@ How to run the tests:
 5. Locate the libraries by (Right clicking)going to properties->Java Build Path->Libraries (Tab), Now click on Add External JARs and JARs of Selenium-java, ChromeDriver and Testng (from Step2)
 6. Finally Run all four test cases one by one by right clicking on the testcases and Run As->TestNG Test
 
-Step By Step Description of TestCases and SQL Tasks:
+# Step By Step Description of TestCases and SQL Tasks:
 Please find the documentation in doc/step_description_SQL.pdf
